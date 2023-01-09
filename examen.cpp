@@ -55,7 +55,8 @@ int main(){
 	//Primer intento de logueo
 	system("/bin/clear");
 	cout<<RED<<"\n\t    LogIn"<<WHITE<<endl;
-	cout<<MAGENTA<<"\tIntentos: "<<CYAN<<counter<<"/3\n"<<WHITE<<endl;
+	cout<<MAGENTA<<"\tIntentos: "<<CYAN<<counter<<"/3"<<WHITE<<endl;
+	cout<<CYAN<<"GitHub: https://github.com/Alcatraz2033/ExamenProgramacion.git"<<WHITE<<endl<<endl;
 	cout<<"["<<CYAN<<"+"<<WHITE"]"<<CYAN<<" Username: "<<WHITE; cin>>TPuser;
 	cout<<"["<<CYAN<<"+"<<WHITE"]"<<CYAN<<" Password: "<<WHITE; cin>>TPpass;
 	
@@ -63,7 +64,8 @@ int main(){
 	while(TPuser != "Thelman" && TPpass != TPcedula){
 		system("/bin/clear");
 		cout<<RED<<"\n\t    LogIn"<<WHITE<<endl;
-		cout<<MAGENTA<<"\tIntentos: "<<CYAN<<counter<<"/3\n"<<WHITE<<endl;
+		cout<<MAGENTA<<"\tIntentos: "<<CYAN<<counter<<"/3"<<WHITE<<endl;
+		cout<<CYAN<<"GitHub: https://github.com/Alcatraz2033/ExamenProgramacion.git"<<WHITE<<endl<<endl;
 		cout<<"["<<CYAN<<"+"<<WHITE"]"<<CYAN<<" Username: "<<WHITE; cin>>TPuser;
 		cout<<"["<<CYAN<<"+"<<WHITE"]"<<CYAN<<" Password: "<<WHITE; cin>>TPpass;
 		counter++;
@@ -83,11 +85,6 @@ int main(){
 	cout<<"\t["<<CYAN<<"+"<<WHITE"]"<<CYAN<<" 3. Combinatoria"<<WHITE<<endl;
 	cout<<"\t["<<CYAN<<"+"<<WHITE"]"<<CYAN<<" 0. Salir"<<WHITE<<endl<<endl;
 	cout<<GREEN<<"Examen@Thelman$ "<<WHITE;cin>>opt;
-	if(opt != 1 || opt != 2 || opt != 3 || opt != 0){
-		system("/bin/clear");
-		cout<<"["<<RED<<"!"<<WHITE<<"]"<<RED<<" Opcion Incorrecta"<<WHITE<<endl;	
-		exit(0);		
-	}
 
 	//Mostrar Usuario
 	if(opt == 1){
@@ -124,7 +121,7 @@ int main(){
 		cout<<"\t["<<CYAN<<"+"<<WHITE"]"<<CYAN<<" LONGITUD DE CADENA: "<<WHITE<<strlen(TPnombre)<<endl;
 		cout<<"\t["<<CYAN<<"+"<<WHITE"]"<<CYAN<<" LONGITUD DE CONJUNTO: "<<WHITE<<strlen(nrNombre)<<endl;
 	}
-	else{
+	if(opt == 0){
 		system("/bin/clear");
 		cout<<"\t["<<CYAN<<"+"<<WHITE"]"<<CYAN<<" Hasta Pronto!!!"<<WHITE<<endl;
 		exit(0);
